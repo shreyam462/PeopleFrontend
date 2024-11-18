@@ -1,0 +1,10 @@
+<h2>Delete Person</h2>
+<p>Are you sure you want to delete this person?</p>
+<ul>
+  <li><strong>Name:</strong> {{ person.name }}</li>
+  <li><strong>Age:</strong> {{ person.age }}</li>
+  <li><strong>Gender:</strong> {{ person.gender }}</li>
+  <li><strong>Mobile:</strong> {{ person.mobile }}</li>
+</ul>
+<button (click)="deletePerson()">Confirm Delete</button>
+<button (click)="router.navigate(['/list'])">Cancel</button>
